@@ -19,7 +19,9 @@ cll.readFile('ppl.csv', {encoding: "UTF-8"}, function(err, data){
         people.sort((a, b) => {
             return getDiff(a) - getDiff(b)
         })
-        console.log(people)
+        people.forEach(element => {
+            console.log(element.initials)
+        })
     }
 })
 
