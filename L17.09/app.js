@@ -1,5 +1,5 @@
 class Person {
-    constructor(name, surname, gender, birthdate){
+    constructor(surname, name, gender, birthdate){
         this.name = name
         this.surname = surname
         this.initials = `${name.charAt(0)}. ${surname}`
