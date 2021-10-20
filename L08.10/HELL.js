@@ -17,7 +17,7 @@ data = fs.readFileSync('./public/List.csv', {encoding: "UTF-8"}, function(err, d
     if(err){
       throw new Error(err)  
     }else{
-    return data
+        return data
     }
 })
 data = data.substring(1)
