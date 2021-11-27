@@ -20,4 +20,5 @@ const sendForm = async function(body){
     }
     let res = await fetch("/add?" + str)
     let data = await res.json()
+    window.location.replace("/")
 }

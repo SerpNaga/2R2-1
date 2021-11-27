@@ -1,6 +1,13 @@
 <h1>Our Team</h1>
 <ul>
     {{#each list}}
-    <li>{{this}}</li>
+    <li class="mb-2">{{this}} <button class="btn ntb-outline btn-outline-danger">Delete</button></li>
     {{/each}}
+    <button class="btn btn-dark" data-type="addUser">Add member</button>
 </ul>
+<script>
+    let btn = document.querySelector("[data-type=\"addUser\"]")
+    btn.addEventListener("click", e=>{
+        window.location.replace("/new")
+    })
+</script>
